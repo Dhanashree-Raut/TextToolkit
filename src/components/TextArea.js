@@ -7,8 +7,6 @@ export default function TextArea( props ) {
     //#region  Util Functions
     const [text, setTextValue] = useState("");
     const [copyTextValue , setCopyTextValue] = useState("Copy Text");
-
-    const showAlert = props.showAlert;
   
     // Util Features
     const onChnageHandler = ( event )=> {
@@ -16,16 +14,14 @@ export default function TextArea( props ) {
     }
 
     const toUpperCase = ()=>{
+        console.log()
         setTextValue(text.toUpperCase());
-        showAlert("Text has been converted to uppercase.", "success", 2);
-
 
     }
 
     const toLowerrCase = ()=>{
+        console.log()
         setTextValue(text.toLowerCase());
-        showAlert("Text has been converted to lowercaase.", "success", 2);
-
     }
 
     const toSentenceCase = () => {
@@ -34,14 +30,11 @@ export default function TextArea( props ) {
                         return sentence.charAt(0).toUpperCase() + sentence.slice(1).toLocaleLowerCase()
                         }).join("");
         setTextValue(newText);
-        showAlert("Text has been converted to sentence case.", "success", 2);
-
     };
 
     const copyyText = () => {
         window.navigator.clipboard.writeText(text);
         setCopyTextValue("Copied!")
-        showAlert("Text has been copied to the clipboard.", "success", 2);
 
         // alert("Text Copied");
         setTimeout(() => {
@@ -51,7 +44,6 @@ export default function TextArea( props ) {
 
     const rmvExtraSpace = () => {
         setTextValue(text.replace(/\s+/g, ' ').trim());
-        showAlert("Extra spaces have been removed.", "success", 2);
     };
     
     // Util Summary Values 
@@ -64,7 +56,10 @@ export default function TextArea( props ) {
         return sentences ? sentences.length : 0;
     };
 
-    //#endregion Util
+    //#endregion Utli
+
+    // UtilText Dark Mode Styling 
+
 
 
     return (
