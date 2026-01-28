@@ -47,5 +47,5 @@ TextTools is a simple and efficient React-based text utility application that he
 ## 👩‍💻 Author
 
 - **Dhanashree Raut**
-- **Live Demo :** LinkedIn: https://www.linkedin.com/in/dhanashree-raut-3a763420b/
+- **Live Demo :** https://texttoolkit-1-xjb5.onrender.com
 
