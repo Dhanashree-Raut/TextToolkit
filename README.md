@@ -32,10 +32,10 @@ TextTools is a simple and efficient React-based text utility application that he
 
 1. Clone the repository  
    ```bash
-   git clone https://github.com/your-username/texttools.git
+   git clone https://github.com/Dhanashree-Raut/TextToolkit.git
 2. Navigate to the project directory
    ```bash
-   cd texttools
+   cd TextToolkit
 3. Install dependencies
    ```bash
     npm install
@@ -47,5 +47,5 @@ TextTools is a simple and efficient React-based text utility application that he
 ## 👩‍💻 Author
 
 - **Dhanashree Raut**
-- **Live Demo :** LinkedIn: https://www.linkedin.com/in/dhanashree-raut-3a763420b/
+- **Live Demo :** https://texttoolkit-1-xjb5.onrender.com
 
