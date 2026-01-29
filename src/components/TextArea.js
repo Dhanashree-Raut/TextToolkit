@@ -69,8 +69,7 @@ export default function TextArea( props ) {
 
     return (
         <>
-            <div></div>
-            <div className="mb-3" style={{color:props.invertMode}}>
+            <div className="" style={{color:props.invertMode}}>
                 {/* <h2>{props.header}</h2> */}
                 <h2 style={{border:"#007bff  solid 1px",background: props.mode === 'dark'? 'black' : ''}}  className="badge-primary px-3 py-1 mt-3">{ text==="" ? 0 :text.split(" ").length } words | {text.length} Characters</h2>
                 

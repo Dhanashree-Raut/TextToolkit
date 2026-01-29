@@ -14,7 +14,7 @@ export default function About( props ) {
 
     return (
         <>
-           <div className="container my-5">
+           <div className="container">
                 <div className="row align-items-center">
                     
                     {/* LEFT: Text */}
@@ -34,7 +34,7 @@ export default function About( props ) {
                     {/* RIGHT: Image */}
                     <div className="col-md-5 text-center">
                     <img
-                        src="https://img.freepik.com/free-vector/text-tool-concept-illustration_114360-7981.jpg"
+                        src="https://img.freepik.com/free-psd/3d-rendering-graphic-design_23-2149667478.jpg"
                         className="img-fluid rounded shadow"
                         alt="TextToolkit illustration"
                     />

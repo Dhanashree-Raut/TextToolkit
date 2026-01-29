@@ -39,10 +39,9 @@ function App() {
 
   const showAlert = (message , status , sec) =>{
       setAlert({message: message, status:status})
-
-    setTimeout( () => {
-      setAlert(null)
-    }, sec * 1000)
+      setTimeout( () => {
+        setAlert(null)
+      }, sec * 1000)
   }
 
   //#endregion Features
