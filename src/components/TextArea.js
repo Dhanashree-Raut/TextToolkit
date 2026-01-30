@@ -53,6 +53,10 @@ export default function TextArea( props ) {
         setTextValue(text.replace(/\s+/g, ' ').trim());
         showAlert("Extra spaces have been removed.", "success", 2);
     };
+
+    const clearAll = () =>{
+        setTextValue("");
+    }
     
     // Util Summary Values 
     const getSentenceCount = () => {
@@ -75,12 +79,23 @@ export default function TextArea( props ) {
                 
                 <textarea style={{border:"#007bff  solid 1px", background: props.mode === 'dark'? 'black' : 'white', color: props.mode === 'dark'? 'white' : 'black'}} placeholder='Please Add your text here...' className="form-control" onChange={onChnageHandler} value={text} id="header" rows="8"></textarea>
 
-                <button style={{background: props.mode === 'dark'? 'black' : ''}} type="button"  disabled={text.trim().length === 0} onClick={copyyText} className="btn btn-primary mt-3">{copyTextValue}</button>
-                <button style={{background: props.mode === 'dark'? 'black' : ''}} type="button"disabled={text.trim().length === 0}  onClick={toUpperCase} className="mx-2 btn btn-primary mt-3">Upper Case</button>
-                <button style={{background: props.mode === 'dark'? 'black' : ''}} type="button"disabled={text.trim().length === 0}  onClick={toLowerrCase} className="mx-2 btn btn-primary mt-3">Lower Case</button>
-                <button style={{background: props.mode === 'dark'? 'black' : ''}} type="button"disabled={text.trim().length === 0}  onClick={toSentenceCase} className="mx-2 btn btn-primary mt-3">Sentence Case</button>
-                <button style={{background: props.mode === 'dark'? 'black' : ''}} type="button"disabled={text.trim().length === 0}  onClick={rmvExtraSpace} className="mx-2 btn btn-primary mt-3">Remove Extra Spaces</button>
-                {/* <button type="button" onClick={toUpperCase} className="btn btn-primary mt-3">Upper Case</button> */}
+                <div className="button-container d-flex">
+
+                    <button style={{background: props.mode === 'dark'? 'black' : ''}} type="button"  disabled={text.trim().length === 0} onClick={copyyText} className="btn btn-primary mt-3">{copyTextValue}</button>
+                
+                    <button style={{background: props.mode === 'dark'? 'black' : ''}} type="button"disabled={text.trim().length === 0}  onClick={toUpperCase} className="mx-2 btn btn-primary mt-3">Upper Case</button>
+                    
+                    <button style={{background: props.mode === 'dark'? 'black' : ''}} type="button"disabled={text.trim().length === 0}  onClick={toLowerrCase} className="mx-2 btn btn-primary mt-3">Lower Case</button>
+                    
+                    <button style={{background: props.mode === 'dark'? 'black' : ''}} type="button"disabled={text.trim().length === 0}  onClick={toSentenceCase} className="mx-2 btn btn-primary mt-3">Sentence Case</button>
+
+                    <button style={{background: props.mode === 'dark'? 'black' : ''}} type="button"disabled={text.trim().length === 0}  onClick={rmvExtraSpace} className="mx-2 btn btn-primary mt-3">Remove Extra Spaces</button>
+
+                    <button style={{background: props.mode === 'dark'? 'black' : ''}} type="button"disabled={text.trim().length === 0}  onClick={clearAll} className="mx-2 btn btn-primary mt-3 ms-auto">Clear All</button>
+
+                </div>
+             
+            
             </div>
 
             <div style={{color: props.mode === 'dark'? 'white' : '#002041'}}>
